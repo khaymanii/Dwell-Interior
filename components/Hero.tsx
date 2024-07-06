@@ -4,12 +4,12 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="max-w-5xl mx-auto my-12 px-4 flex items-center justify-between">
-      <div className="pr-12">
-        <h1 className="text-xl font-extrabold pb-2">
+    <div className="max-w-5xl mx-auto my-12 px-4 flex flex-col lg:flex-row items-center justify-between">
+      <div className="lg:pr-12 lg:w-1/2 text-center lg:text-left">
+        <h1 className="text-xl md:text-2xl lg:text-2xl font-extrabold pb-2">
           We help you make minimalist and modern interior decisions
         </h1>
-        <p className="text-sm pb-4">
+        <p className="text-sm md:text-base lg:text-base pb-4">
           Experience modern elegance and minimalist charm with our curated
           furniture selection. Elevate your space with sleek designs and clean
           lines. Discover timeless pieces that speak volumes in understated
@@ -28,14 +28,14 @@ export default function Hero() {
             <Button
               radius="full"
               variant="bordered"
-              className=" font-bold text-customGreen border-customGreen"
+              className="font-bold text-customGreen border-customGreen"
             >
               Explore now
             </Button>
           </span>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 justify-center lg:justify-start">
           <div className="flex flex-col items-center">
             <span className="font-extrabold text-lg">5+</span>{" "}
             <span className="text-sm">experience</span>
@@ -50,12 +50,13 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center">
         <Image
-          src="./images/heroimage.svg"
+          src="/images/heroimage.svg"
           alt="hero image"
-          width={2000}
-          height={2000}
+          width={1000}
+          height={1000}
+          className="max-w-full h-auto"
         />
       </div>
     </div>
