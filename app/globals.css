@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  font-family: "Besley", serif; /* Ensure Besley font is applied */
+  font-family: "Besley", serif;
 }
