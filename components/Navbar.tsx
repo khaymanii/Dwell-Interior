@@ -77,7 +77,7 @@ export default function App() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full text-black text-sm" href="#" size="lg">
+            <Link className="w-full text-gray-600 text-sm" href="#" size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
