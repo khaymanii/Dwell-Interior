@@ -19,7 +19,7 @@ export default function Hero() {
           <span className="pr-4">
             <Button
               radius="full"
-              className="font-bold text-white bg-customGreen px-6"
+              className="font-semibold text-white bg-customGreen hover:bg-transparent hover:text-customGreen hover:border-2 hover:border-customGreen px-6"
             >
               Shop now
             </Button>
@@ -28,7 +28,7 @@ export default function Hero() {
             <Button
               radius="full"
               variant="bordered"
-              className="font-bold text-customGreen border-customGreen"
+              className="font-semibold text-customGreen border-customGreen hover:text-white hover:bg-customGreen"
             >
               Explore now
             </Button>

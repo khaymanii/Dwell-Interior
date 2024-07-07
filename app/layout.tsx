@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Besley } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Provider from "./provider";
 
-const besley = Besley({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Dwell Interior",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body className={besley.className}>
+      <body className={poppins.className}>
         <Provider>{children}</Provider>
       </body>
     </html>

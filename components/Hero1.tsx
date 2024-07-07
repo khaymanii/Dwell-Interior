@@ -6,7 +6,7 @@ export default function Hero1() {
     <div className="bg-customGreen1 my-16 h-auto">
       <div className="max-w-5xl mx-auto px-4 py-12 flex flex-col lg:flex-row items-center">
         <div className="lg:pr-24 lg:w-1/2 text-center lg:text-left">
-          <h1 className="font-extrabold text-customGreen text-xl md:text-2xl lg:text-3xl pb-4">
+          <h1 className="font-extrabold text-xl md:text-2xl lg:text-2xl pb-4">
             Amazing <br /> deals for you
           </h1>
           <p className="text-sm md:text-base lg:text-base">

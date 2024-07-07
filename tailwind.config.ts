@@ -15,7 +15,7 @@ const config: Config = {
         customGreen1: "#F0F5F5",
       },
       fontFamily: {
-        besley: ["Besley", "serif"], // Define the Besley font
+        besley: ["Poppins", "sans-serif"],
       },
     },
   },
