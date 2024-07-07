@@ -13,7 +13,7 @@ export default function Hero() {
           Experience modern elegance and minimalist charm with our curated
           furniture selection. Elevate your space with sleek designs and clean
           lines. Discover timeless pieces that speak volumes in understated
-          sophistication
+          sophistication.
         </p>
         <div className="pb-4">
           <span className="pr-4">
