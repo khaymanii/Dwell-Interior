@@ -19,7 +19,7 @@ export default function App() {
   const menuItems = ["Home", "Product", "Category", "About"];
 
   return (
-    <Navbar className="bg-white" onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className="bg-white shadow-sm" onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
