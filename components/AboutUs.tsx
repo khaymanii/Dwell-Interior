@@ -4,9 +4,8 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <div className="max-w-5xl mx-auto my-16 px-4 flex items-center">
-      {" "}
-      <div className="lg:pr-24 lg:w-1/2 text-center lg:text-left">
+    <div className="max-w-5xl mx-auto my-16 px-4 flex flex-col lg:flex-row items-center">
+      <div className="lg:pr-12 lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
         <h1 className="font-extrabold text-xl md:text-2xl lg:text-2xl pb-4">
           About Us
         </h1>
@@ -19,36 +18,39 @@ export default function AboutUs() {
         <Button
           radius="full"
           variant="bordered"
-          className="font-semibold text-customGreen border-customGreen  hover:text-white hover:bg-customGreen"
+          className="font-semibold text-customGreen border-customGreen hover:text-white hover:bg-customGreen"
         >
           Contact us
-        </Button>{" "}
+        </Button>
       </div>
-      <div>
-        <Image
-          src="./images/aboutimage1.svg"
-          alt="aboutimage1"
-          width={400}
-          height={400}
-        />
-      </div>
-      <div className="px-4">
-        <Image
-          src="./images/aboutline.svg"
-          alt="aboutline"
-          width={2}
-          height={2}
-          className="h-[290px] w-2"
-        />
-      </div>
-      <div>
-        <Image
-          src="./images/teamimage.svg"
-          alt="aboutline"
-          width={120}
-          height={120}
-          className=""
-        />
+      <div className="flex flex-col md:flex-row md:items-center">
+        <div className="mb-8 md:mb-0 md:mr-4 lg:mr-6">
+          <Image
+            src="/images/aboutimage1.svg"
+            alt="aboutimage1"
+            width={400}
+            height={400}
+            className="w-full max-w-xs md:max-w-sm lg:max-w-full"
+          />
+        </div>
+        <div className="hidden lg:block">
+          <Image
+            src="/images/aboutline.svg"
+            alt="aboutline"
+            width={2}
+            height={330}
+            className="h-[300px] w-2"
+          />
+        </div>
+        <div className="md:ml-4 lg:ml-8">
+          <Image
+            src="/images/teamimage.svg"
+            alt="teamimage"
+            width={120}
+            height={120}
+            className="w-48 sm:w-28 md:w-32 lg:w-40"
+          />
+        </div>
       </div>
     </div>
   );
